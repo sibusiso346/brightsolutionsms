@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- HTTPS Security Headers -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <!-- CSP temporarily disabled to test Font Awesome -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self';"> -->
+    
+    
+    <!-- Primary Meta Tags -->
+    <title>Bright Solutions MS - Web Development, Mobile Apps & Digital Marketing Services in South Africa</title>
+    <meta name="title" content="Bright Solutions MS - Web Development, Mobile Apps & Digital Marketing Services in South Africa">
+    <meta name="description" content="Professional web development, mobile app development, digital marketing, and cloud solutions for South African businesses. Expert team delivering innovative digital solutions. Contact us today!">
+    <meta name="keywords" content="web development South Africa, mobile app development South Africa, digital marketing South Africa, cloud solutions South Africa, web design South Africa, SEO South Africa, React, Node.js, AWS, Azure, UI/UX design, cybersecurity, business solutions South Africa">
+    <meta name="author" content="Bright Solutions MS">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brightsolutionsms.co.za/">
+    <meta property="og:title" content="Bright Solutions MS - Professional Digital Solutions for South Africa">
+    <meta property="og:description" content="Expert web development, mobile apps, digital marketing, and cloud solutions for South African businesses. Transform your business with our innovative digital services.">
+    <meta property="og:image" content="https://brightsolutionsms.co.za/images/og-image.jpg">
+    <meta property="og:site_name" content="Bright Solutions MS">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brightsolutionsms.co.za/">
+    <meta property="twitter:title" content="Bright Solutions MS - Professional Digital Solutions for South Africa">
+    <meta property="twitter:description" content="Expert web development, mobile apps, digital marketing, and cloud solutions for South African businesses. Transform your business with our innovative digital services.">
+    <meta property="twitter:image" content="https://brightsolutionsms.co.za/images/twitter-image.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Bright Solutions MS">
+    
+    <!-- Source Code Protection Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brightsolutionsms.co.za/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="shortcut icon" type="image/png" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="apple-touch-icon" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/brightsolutionsms-Icon.PNG">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- DNS Prefetch for performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Critical CSS - Inline for fastest rendering -->
+    <style>
+        /* Critical above-the-fold styles */
+        body{font-family:'Inter',sans-serif;line-height:1.6;color:#333;overflow-x:hidden;margin:0;padding:0}
+        .navbar{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;height:auto;min-height:80px}
+        .hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;position:relative;overflow:hidden;padding-top:100px}
+        .hero-container{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;justify-items:center;position:relative;z-index:1;min-height:80vh}
+        .hero-title{font-size:3.5rem;font-weight:700;margin-bottom:1.5rem;line-height:1.2}
+        .hero-description{font-size:1.2rem;margin-bottom:2rem;opacity:0.9;line-height:1.6}
+        .btn{padding:1rem 2rem;border:none;border-radius:50px;font-weight:600;font-size:1rem;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-block;text-align:center}
+        .btn-primary{background:#2563eb;color:white}
+        .btn-primary:hover{background:#1d4ed8;transform:translateY(-2px);box-shadow:0 10px 25px rgba(37,99,235,0.3)}
+    </style>
+    
+    <!-- Hero Logo Styles -->
+    <style>
+        .hero-logo {
+            max-width: 200px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.3));
+            transition: all 0.3s ease;
+        }
+        .hero-logo:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 150px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-logo {
+                max-width: 120px;
+            }
+        }
+    </style>
+    
+    <!-- Source Code Protection CSS -->
+    <style>
+        /* Disable text selection */
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Disable image dragging */
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+        
+        /* Allow interaction for buttons and links */
+        .btn, a, button, input, textarea, select {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+            pointer-events: auto;
+        }
+        
+        /* Disable text highlighting */
+        ::selection {
+            background: transparent;
+        }
+        ::-moz-selection {
+            background: transparent;
+        }
+        
+        /* Disable context menu on images */
+        img {
+            -webkit-context-menu: none;
+            -moz-context-menu: none;
+            -ms-context-menu: none;
+            context-menu: none;
+        }
+    </style>
+    
+    <!-- Non-critical CSS - Load minified version asynchronously -->
+    <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+    
+    <!-- Font optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Font Awesome - Multiple loading methods for reliability -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fallback Font Awesome loading -->
+    <script>
+        // Ensure Font Awesome loads even if CSS link fails
+        (function() {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+            link.crossOrigin = 'anonymous';
+            document.head.appendChild(link);
+        })();
+    </script>
+    
+    <!-- EmailJS - Load asynchronously -->
+    <script>
+        // Load EmailJS asynchronously
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+            script.async = true;
+            script.onload = function() {
+                // Initialize EmailJS when loaded
+                if (typeof emailjs !== 'undefined') {
+                    emailjs.init('YOUR_PUBLIC_KEY');
+                }
+            };
+            document.head.appendChild(script);
+        })();
+    </script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bright Solutions MS",
+        "url": "https://brightsolutionsms.co.za",
+        "logo": "https://brightsolutionsms.co.za/images/brightsolutionsms.png",
+        "description": "Professional web development, mobile app development, digital marketing, and cloud solutions company serving South African businesses.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+27604504848",
+            "contactType": "customer service",
+            "email": "info@brightsolutionsms.co.za"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/brightsolutionsms",
+            "https://twitter.com/brightsolutionsms",
+            "https://www.facebook.com/brightsolutionsms"
+        ],
+        "foundingDate": "2019",
+        "numberOfEmployees": "10-50",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "South Africa"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Solutions Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Web Development",
+                        "description": "Custom websites and web applications built with modern technologies"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobile App Development",
+                        "description": "Native and cross-platform mobile applications for iOS and Android"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Digital Marketing",
+                        "description": "Strategic digital marketing campaigns to boost online presence"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cloud Solutions",
+                        "description": "Scalable cloud infrastructure and migration services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Bright Solutions MS",
+        "image": "https://brightsolutionsms.co.za/images/business-image.jpg",
+        "description": "Professional digital solutions company specializing in web development, mobile apps, and digital marketing for South African businesses.",
+        "url": "https://brightsolutionsms.co.za",
+        "telephone": "+27604504848",
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150"
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What services does Bright Solutions MS offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer comprehensive digital solutions including web development, mobile app development, digital marketing, and cloud solutions for South African businesses."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I contact Bright Solutions MS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can contact us via email at info@brightsolutionsms.co.za or call us at +27604504848. We're here to help with all your digital solution needs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you serve businesses across South Africa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide digital solutions to businesses throughout South Africa, helping them thrive in the digital age with our innovative services."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home"><img src="images/brightsolutionsms.png" alt="Bright Solutions MS" class="logo-image" loading="eager" width="320" height="80"></a>
+                </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experts" class="nav-link">Experts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero" role="banner">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Bright Solutions for South African Success</h1>
+                <p class="hero-description">
+                    We provide innovative digital solutions to help South African businesses thrive in the digital age. 
+                    From web development to digital marketing, we've got you covered.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" role="button">Get Started</a>
+                    <a href="#services" class="btn btn-secondary" role="button">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic" aria-hidden="true">
+                    <img src="images/brightsolutionsms-Icon.PNG" alt="Bright Solutions MS Icon" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="services-heading">Our Services</h2>
+                <p>Comprehensive solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android devices.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic digital marketing campaigns to boost your online presence and reach.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Creative visual solutions including logos, branding, and marketing materials that make your business stand out.</p>
+                </article>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews" role="region" aria-labelledby="reviews-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="reviews-heading">What Our Clients Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            <div class="reviews-grid">
+               
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Their digital marketing strategies helped us reach new heights in the South African market. The team is knowledgeable, creative, and always available to help. Outstanding service!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Thabo Mthembu</h4>
+                            <span>Marketing Director, GrowthSA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "The cloud migration was seamless and our business operations are now more efficient than ever. Bright Solutions MS made the complex seem simple for our South African operations."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mandla Nkosi</h4>
+                            <span>CTO, SA Enterprise Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "From concept to launch, the entire process was smooth and professional. Their attention to detail and customer service is exceptional. Perfect for South African businesses!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Nomsa Dlamini</h4>
+                            <span>Owner, Cape Town Creative Studio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Bright Solutions MS helped us modernize our entire digital infrastructure for the South African market. The results have been phenomenal - increased efficiency, better security, and improved user experience."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sipho Khumalo</h4>
+                            <span>IT Director, Johannesburg Tech Corp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Overall Rating Summary -->
+            <div class="rating-summary">
+                <div class="rating-stats">
+                    <div class="rating-number">
+                        <span class="rating-score">4.9</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Based on 150+ reviews</p>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span>5 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 4%"></div>
+                            </div>
+                            <span>4%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%"></div>
+                            </div>
+                            <span>1%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1 star</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Experts Section -->
+    <section id="experts" class="experts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Experts</h2>
+                <p>Our talented team of professionals dedicated to delivering exceptional results</p>
+            </div>
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Lerato Molefe</h3>
+                        <p class="expert-role">Lead Web Developer</p>
+                        <p class="expert-description">
+                            Full-stack developer with 8+ years of experience in modern web technologies, 
+                            specializing in South African business solutions. Expert in React, Node.js, and cloud architecture.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Zanele Mthembu</h3>
+                        <p class="expert-role">Mobile App Specialist</p>
+                        <p class="expert-description">
+                            Mobile development expert with expertise in iOS, Android, and cross-platform solutions. 
+                            Passionate about creating intuitive user experiences for South African businesses.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Matome Seleeka</h3>
+                        <p class="expert-role">Digital Marketing Strategist</p>
+                        <p class="expert-description">
+                            Marketing strategist with 6+ years of experience in digital campaigns, SEO, and social media. 
+                            Specializes in helping South African businesses grow their online presence.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Google Ads</span>
+                            <span class="skill-tag">Social Media</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Bongani Sibiya</h3>
+                        <p class="expert-role">Cloud Solutions Architect</p>
+                        <p class="expert-description">
+                            Cloud architecture expert specializing in AWS, Azure, and DevOps practices. 
+                            Ensures scalable and secure cloud infrastructure for South African businesses.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Amahle Dube</h3>
+                        <p class="expert-role">UI/UX Designer</p>
+                        <p class="expert-description">
+                            Creative designer with a passion for user-centered design. 
+                            Creates beautiful and functional interfaces that South African users love.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <div class="expert-avatar">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Thulani Mokoena</h3>
+                        <p class="expert-role">Cybersecurity Specialist</p>
+                        <p class="expert-description">
+                            Security expert focused on protecting digital assets and ensuring compliance for South African businesses. 
+                            Implements robust security measures for all our projects.
+                        </p>
+                        <div class="expert-skills">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Security Audits</span>
+                            <span class="skill-tag">Compliance</span>
+                            <span class="skill-tag">Risk Assessment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Bright Solutions MS</h2>
+                    <p>
+                        We are a team of passionate professionals dedicated to delivering exceptional 
+                        digital solutions for South African businesses. With years of experience in the industry, we combine 
+                        creativity with technical expertise to help South African companies achieve their goals.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-graphic">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your next project? Let's talk!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@brightsolutionsms.co.za" style="color: #64748b; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#64748b'">info@brightsolutionsms.co.za</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+27604504848" style="color: #64748b; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#64748b'">+27 60 450 4848</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/brightsolutionsms.png" alt="Bright Solutions MS" class="footer-logo">
+                    <h3>Bright Solutions MS</h3>
+                    <p>Delivering innovative digital solutions for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#experts">Experts</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bright Solutions MS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Source Code Protection Script - Load First -->
+    <script src="protection.min.js"></script>
+    
+    <!-- Main JavaScript - Load minified version asynchronously -->
+    <script>
+        // Load main script asynchronously
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'script.min.js';
+            script.async = true;
+            script.defer = true;
+            document.body.appendChild(script);
+        })();
+    </script>
+    
+    <!-- Service Worker for caching -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.min.js').then(function(registration) {
+                    console.log('SW registered: ', registration);
+                }).catch(function(registrationError) {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

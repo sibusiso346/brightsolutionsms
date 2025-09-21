@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://brightsolutionsms.co.za/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to crawl all content
+Disallow:
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow access to CSS and JS files
+Allow: /styles.min.css
+Allow: /script.min.js
+Allow: /sw.min.js
+Allow: /protection.min.js
+Allow: /images/
+Allow: /fonts/
+
+# Block access to sensitive files
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.old$
